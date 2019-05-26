@@ -2,5 +2,5 @@
 // render - функция express компиляции шаблона страницы
 // index - имя шаблона index.jade
 module.exports.index = function(req, res) {
-    res.render('index', {title: 'Express Балакир Сергей'});
+    res.render('index', {title: 'Балакир Сергей'});
 };
