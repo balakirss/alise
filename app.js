@@ -6,13 +6,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 require('./app_server/models/db');
 
-
 var createError = require('http-errors');
-
-
-
-
-
 // расположение ПУТИ
 var indexRouter = require('./app_server/routes/index');
 var usersRouter = require('./app_server/routes/users');
