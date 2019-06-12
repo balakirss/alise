@@ -6,8 +6,6 @@ block content
         h1=title
     .row
       .col-md-6.col-sm-12
-        p
-          | was created to help people.
-          | <br /><br />
-          | Lorem ipsum
+        p !{(content).replace(/\n/g, '<br/>')}
+
 

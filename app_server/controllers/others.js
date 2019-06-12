@@ -1,6 +1,6 @@
-// функция октрытия домашней страницы
-// render - функция express компиляции шаблона страницы
-// index - имя шаблона index.jade
 module.exports.about = function(req, res) {
-    res.render('generic-text', {title: 'About'});
+    res.render('generic-text', {
+        title: 'About Loc8r',
+        content: 'Loc8r created to help people.\n\nLorem dolor sit'
+    });
 };
