@@ -15,6 +15,8 @@
     "mongoose": "^5.5.14",
     "morgan": "~1.9.1",
     "path": "^0.12.7",
+    "readline": "0.0.x",
+    "request": "^2.88.0",
     "serve-favicon": "^2.5.0"
   }
 }

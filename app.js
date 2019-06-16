@@ -4,11 +4,13 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-require('./app_server/models/db');
+require('./app_api/models/db');
 
 var createError = require('http-errors');
 // расположение ПУТИ
-var indexRouter = require('./app_server/routes/index');
+var routes = require('./app_server/routes/index');
+var routesApi = require('./app_api/routes/index');
+
 var usersRouter = require('./app_server/routes/users');
 
 var app = express();
@@ -23,7 +25,14 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', indexRouter);
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
+
+
+
+app.use('/', routes);
+app.use('/api', routesApi);
+
 app.use('/users', usersRouter);
 
 // catch 404 and forward to error handler
