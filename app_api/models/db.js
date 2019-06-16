@@ -2,9 +2,11 @@ var mongoose = require( 'mongoose');
 
 var dbURI = process.env.MONGOLAB_URI;
 
-mongoose.connect(dbURI);
 console.log("подключился "+process.env.MONGOLAB_URI);
 console.log("подключился "+process.env.NODE_ENV);
+
+
+mongoose.connect(dbURI);
 
 var readLine = require("readline");
 if (process.platform === "win32"){
