@@ -39,7 +39,7 @@ module.exports.homelist = function(req, res) {
         //    for (i=0; i <data.length; i++){
         //        data[i].distance = _formatDistance(data[i].distance);
         //    }
-            renderHomepage(req,res, data);
+            renderHomepage(req,res, body);
         }
     );
     };

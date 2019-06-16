@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="78911e42-e901-409b-9354-500c12b92a80" name="Default Changelist" comment="" />
+    <list default="true" id="78911e42-e901-409b-9354-500c12b92a80" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/app_server/controllers/locations.js" beforeDir="false" afterPath="$PROJECT_DIR$/app_server/controllers/locations.js" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -16,8 +18,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app_server/controllers/locations.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="36" column="24" lean-forward="true" selection-start-line="36" selection-start-column="24" selection-end-line="36" selection-end-column="24" />
+            <state relative-caret-position="45">
+              <caret line="42" column="9" lean-forward="true" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -80,8 +82,8 @@
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/app_api/controllers/locations.js" />
         <option value="$PROJECT_DIR$/app_api/controllers/reviews.js" />
-        <option value="$PROJECT_DIR$/app_server/controllers/locations.js" />
         <option value="$PROJECT_DIR$/app_api/models/db.js" />
+        <option value="$PROJECT_DIR$/app_server/controllers/locations.js" />
       </list>
     </option>
   </component>
@@ -197,16 +199,15 @@
       <workItem from="1560595986448" duration="13908000" />
       <workItem from="1560610592889" duration="115000" />
       <workItem from="1560610850060" duration="22765000" />
-      <workItem from="1560700389917" duration="3945000" />
+      <workItem from="1560700389917" duration="4630000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84848000" />
+    <option name="totallyTimeSpent" value="85533000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="74" y="74" width="1260" height="640" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24938676" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -222,7 +223,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5004088" side_tool="true" weight="0.54133856" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49959117" visible="true" weight="0.22834645" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49959117" visible="true" weight="0.63779527" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -388,8 +389,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app_server/controllers/locations.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="36" column="24" lean-forward="true" selection-start-line="36" selection-start-column="24" selection-end-line="36" selection-end-column="24" />
+        <state relative-caret-position="45">
+          <caret line="42" column="9" lean-forward="true" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
         </state>
       </provider>
     </entry>
