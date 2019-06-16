@@ -6,7 +6,7 @@ console.log("подключился "+process.env.MONGOLAB_URI);
 console.log("подключился "+process.env.NODE_ENV);
 
 
-mongoose.connect(dbURI);
+mongoose.connect(dbURI, { useNewUrlParser: true });
 
 var readLine = require("readline");
 if (process.platform === "win32"){
