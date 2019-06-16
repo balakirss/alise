@@ -31,15 +31,16 @@ module.exports.homelist = function(req, res) {
             maxDistance : 99999
         }
     };
+
     request(
         requestOptions,
         function (err, response, body) {
             var i, data;
             data = body;
-            for (i=0; i <data.length; i++){
+            for (i = 0; i < data.length; i++) {
                 data[i].distance = _formatDistance(data[i].distance);
             }
-            renderHomepage(req,res, data);
+            renderHomepage(req, res, data);
         }
     );
     };
