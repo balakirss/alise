@@ -1,29 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="78911e42-e901-409b-9354-500c12b92a80" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/node_modules/request-promise-core/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/request-promise-core/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/request-promise-core/configure/request-next.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/request-promise-core/configure/request2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/request-promise-core/errors.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/request-promise-core/lib/errors.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/request-promise-core/lib/plumbing.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/request-promise-core/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/request-promise/.npmignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/request-promise/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/request-promise/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/request-promise/errors.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/request-promise/lib/rp.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/request-promise/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/stealthy-require/.npmignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/stealthy-require/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/stealthy-require/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/stealthy-require/lib/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/stealthy-require/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-    </list>
+    <list default="true" id="78911e42-e901-409b-9354-500c12b92a80" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -35,10 +13,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app_server/controllers/locations.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
+            <state relative-caret-position="-527">
               <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
             </state>
           </provider>
@@ -53,7 +31,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
@@ -219,15 +197,15 @@
       <workItem from="1560595986448" duration="13908000" />
       <workItem from="1560610592889" duration="115000" />
       <workItem from="1560610850060" duration="22765000" />
-      <workItem from="1560700389917" duration="13847000" />
+      <workItem from="1560700389917" duration="14318000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="94750000" />
+    <option name="totallyTimeSpent" value="95221000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="74" y="74" width="1260" height="640" extended-state="0" />
+    <frame x="74" y="74" width="1260" height="640" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24938676" />
@@ -403,17 +381,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app_server/controllers/locations.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="17" column="24" lean-forward="true" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_server/controllers/locations.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-527">
+          <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
         </state>
       </provider>
     </entry>

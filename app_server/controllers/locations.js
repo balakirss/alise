@@ -37,7 +37,8 @@ module.exports.homelist = function(req, res) {
         function (err, response, body) {
             var i, data;
             data = body;
-            if (response.statusCode === 200 && data.length) {
+            var code =response.statusCode;
+            if (code === 200 && data.length) {
                 for (i = 0; i < data.length; i++) {
                     data[i].distance = _formatDistance(data[i].distance);
                 }
