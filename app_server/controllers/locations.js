@@ -1,4 +1,4 @@
-var request = require('request');
+var request = require('request-promise');
 var apiOptions = {
     server : "http://localhost:3000"};
 if (process.env.NODE_ENV === 'production'){

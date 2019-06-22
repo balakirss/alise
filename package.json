@@ -17,6 +17,7 @@
     "path": "^0.12.7",
     "readline": "0.0.x",
     "request": "^2.88.0",
+    "request-promise": "^4.2.4",
     "serve-favicon": "^2.5.0"
   }
 }
