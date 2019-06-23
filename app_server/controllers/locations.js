@@ -139,20 +139,16 @@ var _showError = function(req, res, status){
 var renderReviewForm = function(req, res, locDetail){
     res.render('location-review-form',{
         title: 'Review' + locDetail.name + 'on Loc8r',
-        pageHeader: {title:'Review' + locDetail.name}
+        pageHeader: {title:'Review:' + locDetail.name}
     });
 
 };
 module.exports.doAddReview = function(req,res){
-    getLocationInfo(req, res, function (req, res, responseData) {
-        renderReviewForm(req, res, responseData);
 
-    });
 };
 
 module.exports.addReview = function(req, res) {
-    res.render('location-review-form', {
-        title: 'Review Starcups on Loc8r',
-        pageHeader:{ title: 'review Starcups'}
+    getLocationInfo(req, res, function (req, res, responseData) {
+        renderReviewForm(req, res, responseData);
     });
-};
+    };
