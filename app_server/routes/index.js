@@ -8,7 +8,8 @@ var ctrlOthers = require('../controllers/others');
 // router.get - ИЩЕТ запрос GET по пути URL домашней страницы - '/'
 router.get('/', ctrlLocation.homelist);
 router.get('/location/:locationid', ctrlLocation.locationInfo);
-router.get('/location/review/new', ctrlLocation.addReview);
+router.get('/location/:locationid/review/new', ctrlLocation.addReview);
+router.post('/location/:locationid/review/new', ctrlLocation.doAddReview);
 
 router.get('/about', ctrlOthers.about);
 

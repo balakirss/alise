@@ -98,15 +98,35 @@ module.exports.locationInfo = function(req, res) {
         requestOptions,
         function (err, response, body) {
             var data = body;
+            if (response.statusCode === 200){
             data.coords = {
                 ing : body.coords[0],
                 lat : body.coords[1]
             };
             renderDetailPage(req, res, data);
+        } else {
+            _showError(req, res, response.statusCode);
+            }
         }
     );
 
 };
+
+var _showError = function(req, res, status){
+    var title, content;
+    if (status === 404){
+        title = "404, страница не найдена";
+        content = "Ох, что-то пошло не так как задумывалось((";
+    }
+    res.status(status);
+    res.render('generic-text', {
+        title: title,
+        content: content
+    });
+
+};
+
+module.exports.doAddReview = function(req,res){};
 
 module.exports.addReview = function(req, res) {
     res.render('location-review-form', {
