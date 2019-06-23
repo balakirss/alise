@@ -6,6 +6,15 @@ var apiOptions = {
 //}
 
 var renderHomepage = function(req,res, responseBody){
+    var message;
+    if (!(responseBody instanceof Array)){
+        message = "API lookup error";
+        responseBody = [];
+    } else {
+        if (!responceBody.length){
+            message = "No places found nearby";
+        }
+    }
     res.render('location-list',{
             title: 'Loc8r - find a place to work with wifi',
             pageHeader:{
@@ -13,7 +22,8 @@ var renderHomepage = function(req,res, responseBody){
                 strapline: 'Find places to work with wifi!'
             },
             sidebar: "Looking for wifi and a seat? Loc8r helps find places.",
-            locations: responseBody
+            locations: responseBody,
+            message: message
         });
     };
 
