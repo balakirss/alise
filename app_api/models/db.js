@@ -1,9 +1,9 @@
 var mongoose = require( 'mongoose');
 
-var dbURI = process.env.MONGOLAB_URI;
-
-console.log("подключился "+process.env.MONGOLAB_URI);
-console.log("подключился "+process.env.NODE_ENV);
+//var dbURI = process.env.MONGOLAB_URI;
+var dbURI ='mongodb://localhost/Loc8r'
+//console.log("подключился "+process.env.MONGOLAB_URI);
+//console.log("подключился "+process.env.NODE_ENV);
 
 
 mongoose.connect(dbURI, { useNewUrlParser: true });
