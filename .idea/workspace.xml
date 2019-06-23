@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="78911e42-e901-409b-9354-500c12b92a80" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/app_server/controllers/locations.js" beforeDir="false" afterPath="$PROJECT_DIR$/app_server/controllers/locations.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_server/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/app_server/routes/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_server/views/location-list.jade" beforeDir="false" afterPath="$PROJECT_DIR$/app_server/views/location-list.jade" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,8 +18,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app_server/controllers/locations.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63">
-              <caret line="127" column="6" lean-forward="true" selection-start-line="127" selection-start-column="6" selection-end-line="127" selection-end-column="6" />
+            <state relative-caret-position="232">
+              <caret line="86" column="7" lean-forward="true" selection-start-line="86" selection-start-column="7" selection-end-line="86" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app_server/views/location-info.jade">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="91">
+              <caret line="39" column="10" lean-forward="true" selection-start-line="39" selection-start-column="10" selection-end-line="39" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -105,7 +112,6 @@
         <option value="$PROJECT_DIR$/public/stylesheets/style.css" />
         <option value="$PROJECT_DIR$/app_server/views/layout.jade" />
         <option value="$PROJECT_DIR$/app_server/views/_includes/sharedHTMLfunctions.jade" />
-        <option value="$PROJECT_DIR$/app_server/views/location-info.jade" />
         <option value="$PROJECT_DIR$/app_server/views/location-review-form.jade" />
         <option value="$PROJECT_DIR$/app_server/views/generic-text.jade" />
         <option value="$PROJECT_DIR$/app_server/controllers/others.js" />
@@ -122,6 +128,7 @@
         <option value="$PROJECT_DIR$/app_server/routes/index.js" />
         <option value="$PROJECT_DIR$/app_server/views/location-list.jade" />
         <option value="$PROJECT_DIR$/app_server/controllers/locations.js" />
+        <option value="$PROJECT_DIR$/app_server/views/location-info.jade" />
       </list>
     </option>
   </component>
@@ -244,15 +251,16 @@
       <workItem from="1560610592889" duration="115000" />
       <workItem from="1560610850060" duration="22765000" />
       <workItem from="1560700389917" duration="17970000" />
-      <workItem from="1561277846091" duration="4233000" />
+      <workItem from="1561277846091" duration="4815000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="103106000" />
+    <option name="totallyTimeSpent" value="103688000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="74" y="74" width="1260" height="640" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24938676" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -268,7 +276,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5004088" side_tool="true" weight="0.54133856" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49959117" visible="true" weight="0.5570866" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49959117" visible="true" weight="0.30905512" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -352,13 +360,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app_server/views/location-info.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="39" column="10" selection-start-line="39" selection-start-column="10" selection-end-line="39" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app_server/routes/users.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -434,10 +435,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app_server/views/location-info.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="91">
+          <caret line="39" column="10" lean-forward="true" selection-start-line="39" selection-start-column="10" selection-end-line="39" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app_server/controllers/locations.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="127" column="6" lean-forward="true" selection-start-line="127" selection-start-column="6" selection-end-line="127" selection-end-column="6" />
+        <state relative-caret-position="232">
+          <caret line="86" column="7" lean-forward="true" selection-start-line="86" selection-start-column="7" selection-end-line="86" selection-end-column="7" />
         </state>
       </provider>
     </entry>

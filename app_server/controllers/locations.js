@@ -75,46 +75,15 @@ var _formatDistance = function(distance){
     return numDistance + unit;
 };
 
-var renderDetailPage = function(req, res){
+var renderDetailPage = function(req, res, locDetail){
     res.render('location-info', {
-        title: 'Starcups',
-        pageHeader: {title: 'Starcups'},
+        title: locDetail.name,
+        pageHeader: {title: locDetail.name},
         sidebar:{
             context: 'is on Loc8r because it has accessible wifi',
             callToAction: 'if you\'ve been and you like\'t - please'
         },
-        location: {
-            name: 'Starcups',
-            address: '125 High Sreet, Reading, RG6 1 PS',
-            rating: 3,
-            facilities: ['Hot drinks','Food', 'Premium wifi'],
-            coords: {lat: 51.455041, lng: -0.9690884},
-            openingTimes: [{
-                days: 'Monday - Friday',
-                opening: '7:00am',
-                closing: '7:00pm',
-                closed: false
-            },{
-                days: 'Saturday',
-                opening: '9:00am',
-                closing: '5:00pm',
-                closed: false
-            },{
-                days: 'Sanday',
-                closed: true
-            }],
-            reviews: [{
-                author: 'Simon Holmes',
-                rating: 5,
-                timestamp: '16 july 2013',
-                reviewText: 'Wat a great place.'
-            },{
-                author: 'Charlie Chaplin',
-                rating: 3,
-                timestamp: '16 june 2013',
-                reviewText: 'It was okay.'
-            }]
-        }
+        location: locDetail
     });
 };
 module.exports.locationInfo = function(req, res) {
@@ -128,7 +97,12 @@ module.exports.locationInfo = function(req, res) {
     request(
         requestOptions,
         function (err, response, body) {
-            renderDetailPage(req, res);
+            var data = body;
+            data.coords = {
+                ing : body.coords[0],
+                lat : body.coords[1]
+            };
+            renderDetailPage(req, res, data);
         }
     );
 
