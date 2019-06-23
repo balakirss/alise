@@ -86,30 +86,40 @@ var renderDetailPage = function(req, res, locDetail){
         location: locDetail
     });
 };
-module.exports.locationInfo = function(req, res) {
-    var requestOptions, path;
-    path = "/api/locations/" + req.params.locationid;
-    requestOptions = {
-        url: apiOptions.server + path,
-        method: "GET",
-        json: {}
-    };
-    request(
-        requestOptions,
-        function (err, response, body) {
-            var data = body;
-            if (response.statusCode === 200){
-            data.coords = {
-                ing : body.coords[0],
-                lat : body.coords[1]
-            };
-            renderDetailPage(req, res, data);
-        } else {
-            _showError(req, res, response.statusCode);
-            }
-        }
-    );
 
+
+
+var getLocationInfo = function (req, res, callback){
+    var requestOptions, path;
+        path = "/api/locations/" + req.params.locationid;
+        requestOptions = {
+            url: apiOptions.server + path,
+            method: "GET",
+            json: {}
+        };
+        request(
+            requestOptions,
+            function (err, response, body) {
+                var data = body;
+                if (response.statusCode === 200) {
+                    data.coords = {
+                        lng: body.coords[0],
+                        lat: body.coords[1]
+                    };
+                    callback(req, res, data);
+                } else {
+                   _showError(req, res, response.statusCode);
+                }
+            }
+        );
+    };
+
+
+
+module.exports.locationInfo = function(req, res) {
+    getLocationInfo(req, res, function (req, res, responseData) {
+        renderDetailPage(req, res, responseData);
+    });
 };
 
 var _showError = function(req, res, status){
@@ -126,7 +136,19 @@ var _showError = function(req, res, status){
 
 };
 
-module.exports.doAddReview = function(req,res){};
+var renderReviewForm = function(req, res, locDetail){
+    res.render('location-review-form',{
+        title: 'Review' + locDetail.name + 'on Loc8r',
+        pageHeader: {title:'Review' + locDetail.name}
+    });
+
+};
+module.exports.doAddReview = function(req,res){
+    getLocationInfo(req, res, function (req, res, responseData) {
+        renderReviewForm(req, res, responseData);
+
+    });
+};
 
 module.exports.addReview = function(req, res) {
     res.render('location-review-form', {
