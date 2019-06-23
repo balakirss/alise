@@ -11,7 +11,7 @@ var renderHomepage = function(req,res, responseBody){
         message = "API lookup error";
         responseBody = [];
     } else {
-        if (!responceBody.length){
+        if (!responseBody.length){
             message = "No places found nearby";
         }
     }
