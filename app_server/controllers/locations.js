@@ -39,6 +39,11 @@ module.exports.homelist = function(req, res) {
             lng : -0.7992599,
             lat : 51.378091,
             maxDistance : 99999
+        //        lng : 1,
+        //        lat : 1,
+        //        maxDistance : 1
+
+
         }
     };
 
@@ -70,14 +75,14 @@ var _formatDistance = function(distance){
     return numDistance + unit;
 };
 
-module.exports.locationInfo = function(req, res) {
+var renderDetailPage = function(req, res){
     res.render('location-info', {
         title: 'Starcups',
         pageHeader: {title: 'Starcups'},
         sidebar:{
             context: 'is on Loc8r because it has accessible wifi',
             callToAction: 'if you\'ve been and you like\'t - please'
-            },
+        },
         location: {
             name: 'Starcups',
             address: '125 High Sreet, Reading, RG6 1 PS',
@@ -110,7 +115,23 @@ module.exports.locationInfo = function(req, res) {
                 reviewText: 'It was okay.'
             }]
         }
-        });
+    });
+};
+module.exports.locationInfo = function(req, res) {
+    var requestOptions, path;
+    path = "/api/locations/" + req.params.locationid;
+    requestOptions = {
+        url: apiOptions.server + path,
+        method: "GET",
+        json: {}
+    };
+    request(
+        requestOptions,
+        function (err, response, body) {
+            renderDetailPage(req, res);
+        }
+    );
+
 };
 
 module.exports.addReview = function(req, res) {
