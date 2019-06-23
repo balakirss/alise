@@ -127,6 +127,9 @@ var _showError = function(req, res, status){
     if (status === 404){
         title = "404, страница не найдена";
         content = "Ох, что-то пошло не так как задумывалось((";
+    } else {
+        title = status + ", что-то пошло не так";
+        content = "что-то сломалось";
     }
     res.status(status);
     res.render('generic-text', {
@@ -139,7 +142,8 @@ var _showError = function(req, res, status){
 var renderReviewForm = function(req, res, locDetail){
     res.render('location-review-form',{
         title: 'Review' + locDetail.name + 'on Loc8r',
-        pageHeader: {title:'Review:' + locDetail.name}
+        pageHeader: {title:'Review:' + locDetail.name},
+        error: req.query.err
     });
 
 };
@@ -157,17 +161,25 @@ module.exports.doAddReview = function(req,res){
       method : "POST",
       json : postdata
   };
-  request(
-      requestOptions,
-      function (err, response, body) {
-          if (response.statusCode === 201){
-              res.redirect('/location/' + locationid);
-          } else {
-              _showError(req, res, response.statusCode);
-          }
+  if (!postdata.author || !postdata.rating || !postdata.reviewText){
+      res.redirect('/location/' + locationid + '/reviews/new?err=val');
+  } else {
+      request(
+          requestOptions,
+          function (err, response, body) {
+              if (response.statusCode === 201) {
+                  res.redirect('/location/' + locationid);
+              } else if (response.statusCode === 400 && body.name && body.name === "ValidationError") {
+                  console.log("мы тута - ", response.statusCode);
+                  res.redirect('/location/' + locationid + '/reviews/new?err=val');
+              } else {
+                  console.log(body);
+                  _showError(req, res, response.statusCode);
+              }
 
-      }
-  );
+          }
+      );
+  }
 };
 
 module.exports.addReview = function(req, res) {
