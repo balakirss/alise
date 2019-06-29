@@ -5,16 +5,16 @@ var apiOptions = {
 //    apiOptions.server = "https://balakirss.ru:3000";
 //}
 
-var renderHomepage = function(req,res, responseBody){
-    var message;
-    if (!(responseBody instanceof Array)){
-        message = "API lookup error";
-        responseBody = [];
-    } else {
-        if (!responseBody.length){
-            message = "No places found nearby";
-        }
-    }
+var renderHomepage = function(req,res){
+//    var message;
+//    if (!(responseBody instanceof Array)){
+//        message = "API lookup error";
+//        responseBody = [];
+//    } else {
+//        if (!responseBody.length){
+//            message = "No places found nearby";
+//        }
+//    }
     res.render('location-list',{
             title: 'Loc8r - find a place to work with wifi',
             pageHeader:{
@@ -22,45 +22,47 @@ var renderHomepage = function(req,res, responseBody){
                 strapline: 'Find places to work with wifi!'
             },
             sidebar: "Looking for wifi and a seat? Loc8r helps find places.",
-            locations: responseBody,
-            message: message
+//            locations: responseBody,
+//            message: message
         });
     };
 
 
 module.exports.homelist = function(req, res) {
-    var requestOptions, path;
-    path = '/api/locations';
-    requestOptions = {
-        url : apiOptions.server + path,
-        method : "GET",
-        json : {},
-        qs : {
-            lng : -0.7992599,
-            lat : 51.378091,
-            maxDistance : 99999
+    renderHomepage(req, res);
+
+    //    var requestOptions, path;
+//    path = '/api/locations';
+//    requestOptions = {
+//        url : apiOptions.server + path,
+//        method : "GET",
+//        json : {},
+//        qs : {
+//            lng : -0.7992599,
+//            lat : 51.378091,
+//            maxDistance : 99999
         //        lng : 1,
         //        lat : 1,
         //        maxDistance : 1
 
 
-        }
-    };
+//        }
+//    };
 
-    request(
-        requestOptions,
-        function (err, response, body) {
-            var i, data;
-            data = body;
-            var code =response.statusCode;
-            if (code === 200 && data.length) {
-                for (i = 0; i < data.length; i++) {
-                    data[i].distance = _formatDistance(data[i].distance);
-                }
-            }
-            renderHomepage(req, res, data);
-        }
-    );
+//    request(
+//        requestOptions,
+//        function (err, response, body) {
+//            var i, data;
+//            data = body;
+//            var code =response.statusCode;
+//            if (code === 200 && data.length) {
+//                for (i = 0; i < data.length; i++) {
+//                    data[i].distance = _formatDistance(data[i].distance);
+//                }
+//            }
+//            renderHomepage(req, res, data);
+//        }
+//    );
     };
 
 var _formatDistance = function(distance){
