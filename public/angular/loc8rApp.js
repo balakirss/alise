@@ -1,17 +1,34 @@
 angular.module('loc8rApp', []);
 
-var locationListCtrl = function ($scope, loc8Data) {
-    $scope.message = "Ищем хорошее местечко";
-    loc8Data
+var locationListCtrl = function ($scope, loc8rData, geolocation) {
+    console.log('bbb');
+    $scope.message = "Определение Вашего месторасположения";
+
+    $scope.getData= function(position){
+        $scope.message = "Ищем хорошее местечко";
+    loc8rData
         .success(function (data) {
             $scope.message = data.length > 0 ? "" : "Ничего не найдено";
             $scope.data = {locations: data};
         })
         .error(function (e) {
             $scope.message = "Извините, что-то пошло не так";
-            console.log(e);
         });
 };
+    $scope.showError = function(error){
+        $scope.$apply(function () {
+            $scope.message = error.message;
+
+        });
+    };
+    $scope.noGeo = function () {
+        $scope.$apply(function () {
+            $scope.message = "Геолокация не поддерживается Вашим браузером";
+
+        });
+    };
+      geolocation.getPosition($scope.getData, $scope.showError, $scope.noGeo);
+    };
 
 var formatDistanceA = function() {
         return function (distance) {
@@ -40,14 +57,15 @@ var ratingStars = function(){
     };
 };
 
-var loc8Data = function($http){
+var loc8rData = function($http){
     return $http.get('api/locations?lng=-0.79&lat=51.3&maxDistance=99999');
 };
 
 var geolocation = function (){
-    var getPosition = function (cdSuccess, cbError, cbNoGeo) {
+    console.log('aaa');
+    var getPosition = function (cbSuccess, cbError, cbNoGeo) {
         if (navigator.geolocation){
-            navigator.geolocation.getCurrentPosition(cdSuccess, cbError);
+            navigator.geolocation.getCurrentPosition(cbSuccess, cbError);
         }
         else {
             cbNoGeo();
@@ -63,6 +81,8 @@ angular
   .controller('locationListCtrl',locationListCtrl)
   .filter('formatDistanceA', formatDistanceA)
   .directive('ratingStars',ratingStars)
-  .service('loc8Data',loc8Data);
+  .service('loc8rData',loc8rData)
+  .service('geolocation',geolocation);
+
 
 
