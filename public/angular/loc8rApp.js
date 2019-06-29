@@ -1,33 +1,43 @@
 angular.module('loc8rApp', []);
 
 var locationListCtrl = function ($scope, loc8rData, geolocation) {
-    console.log('bbb');
-    $scope.message = "Определение Вашего месторасположения";
 
-    $scope.getData= function(position){
-        $scope.message = "Ищем хорошее местечко";
-    loc8rData
+    $scope.message = "Ищем хорошее местечко";
+//    $scope.message = "Определение Вашего месторасположения";
+
+    lng=-0.79;
+    lat=51.3;
+//    loc8rData.locationByCoords(lat,lng);
+
+//    $scope.getData= function(position){
+//        var lat = position.coords.latitude,
+//            lng = position.coords.longitude;
+
+
+//        $scope.message = "Ищем хорошее местечко";
+    loc8rData.locationByCoords(lat,lng)
         .success(function (data) {
             $scope.message = data.length > 0 ? "" : "Ничего не найдено";
             $scope.data = {locations: data};
         })
-        .error(function (e) {
+       .error(function (e) {
             $scope.message = "Извините, что-то пошло не так";
         });
-};
-    $scope.showError = function(error){
-        $scope.$apply(function () {
-            $scope.message = error.message;
+//};
+//    $scope.showError = function(error){
+//        $scope.$apply(function () {
+//            $scope.message = error.message;
 
-        });
-    };
-    $scope.noGeo = function () {
-        $scope.$apply(function () {
-            $scope.message = "Геолокация не поддерживается Вашим браузером";
 
-        });
-    };
-      geolocation.getPosition($scope.getData, $scope.showError, $scope.noGeo);
+//        });
+//    };
+//    $scope.noGeo = function () {
+//        $scope.$apply(function () {
+//            $scope.message = "Геолокация не поддерживается Вашим браузером";
+
+//        });
+//    };
+//      geolocation.getPosition($scope.getData, $scope.showError, $scope.noGeo);
     };
 
 var formatDistanceA = function() {
@@ -58,7 +68,14 @@ var ratingStars = function(){
 };
 
 var loc8rData = function($http){
-    return $http.get('api/locations?lng=-0.79&lat=51.3&maxDistance=99999');
+    var locationByCoords = function (lat, lng) {
+      //  lng=55.755826
+      //  lat=37.6173
+    return $http.get('api/locations?lng='+lng+'&lat='+lat+'&maxDistance=999999');
+};
+    return {
+    locationByCoords: locationByCoords
+    };
 };
 
 var geolocation = function (){
