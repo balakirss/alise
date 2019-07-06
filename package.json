@@ -17,6 +17,7 @@
     "path": "^0.12.7",
     "readline": "0.0.x",
     "request": "^2.88.0",
-    "serve-favicon": "^2.5.0"
+    "serve-favicon": "^2.5.0",
+    "uglify-js": "^3.6.0"
   }
 }
