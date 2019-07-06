@@ -1,71 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="78911e42-e901-409b-9354-500c12b92a80" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app_client/about/about.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app_client/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app_client/home/common/directive/footerGeneric/footerGeneric.directive.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app_client/home/common/directive/footerGeneric/footerGeneric.template.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app_client/home/common/directive/navigation/navigation.directive.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app_client/home/common/directive/navigation/navigation.template.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app_client/home/common/directive/pageHeader/pageHeader.directive.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app_client/home/common/directive/pageHeader/pageHeader.template.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app_client/home/common/directive/ratingStars/ratingStars.directive.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app_client/home/common/directive/ratingStars/ratingStars.template.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app_client/home/common/filters/addHtmlLineBreaks.filter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app_client/home/common/filters/formatDistance.filter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app_client/home/common/services/geolocation.service.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app_client/home/common/services/loc8rData.service.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app_client/home/common/views/genericText.view.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app_client/home/home.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app_client/home/home.view.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app_client/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app_client/locationDetail/locationDetail.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app_client/locationDetail/locationDetail.view.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app_client/reviewModal/reviewModal.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app_client/reviewModal/reviewModal.view.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_server/controllers/locations.js" beforeDir="false" afterPath="$PROJECT_DIR$/app_server/controllers/locations.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_server/controllers/others.js" beforeDir="false" afterPath="$PROJECT_DIR$/app_server/controllers/others.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_server/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/app_server/routes/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_server/views/layout.jade" beforeDir="false" afterPath="$PROJECT_DIR$/app_server/views/layout.jade" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_server/views/location-review-form.jade" beforeDir="false" afterPath="$PROJECT_DIR$/app_server/views/location-review-form.jade" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uglify-js/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uglify-js/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uglify-js/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uglify-js/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uglify-js/bin/extract-props.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uglify-js/bin/uglifyjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uglify-js/bin/uglifyjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uglify-js/lib/ast.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uglify-js/lib/ast.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uglify-js/lib/compress.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uglify-js/lib/compress.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uglify-js/lib/mozilla-ast.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uglify-js/lib/mozilla-ast.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uglify-js/lib/output.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uglify-js/lib/output.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uglify-js/lib/parse.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uglify-js/lib/parse.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uglify-js/lib/propmangle.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uglify-js/lib/propmangle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uglify-js/lib/scope.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uglify-js/lib/scope.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uglify-js/lib/sourcemap.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uglify-js/lib/sourcemap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uglify-js/lib/transform.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uglify-js/lib/transform.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uglify-js/lib/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uglify-js/lib/utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uglify-js/node_modules/source-map/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uglify-js/node_modules/source-map/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uglify-js/node_modules/source-map/dist/source-map.debug.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uglify-js/node_modules/source-map/dist/source-map.debug.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uglify-js/node_modules/source-map/dist/source-map.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uglify-js/node_modules/source-map/dist/source-map.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uglify-js/node_modules/source-map/dist/source-map.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uglify-js/node_modules/source-map/dist/source-map.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uglify-js/node_modules/source-map/dist/source-map.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uglify-js/node_modules/source-map/dist/source-map.min.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uglify-js/node_modules/source-map/lib/source-map-consumer.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uglify-js/node_modules/source-map/lib/source-map-consumer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uglify-js/node_modules/source-map/lib/source-map-generator.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uglify-js/node_modules/source-map/lib/source-map-generator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uglify-js/node_modules/source-map/lib/source-node.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uglify-js/node_modules/source-map/lib/source-node.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uglify-js/node_modules/source-map/lib/util.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uglify-js/node_modules/source-map/lib/util.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uglify-js/node_modules/source-map/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uglify-js/node_modules/source-map/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uglify-js/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uglify-js/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uglify-js/tools/domprops.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uglify-js/tools/domprops.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uglify-js/tools/exports.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uglify-js/tools/exports.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uglify-js/tools/node.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uglify-js/tools/node.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uglify-js/tools/props.html" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uglify-js/tools/props.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-    </list>
+    <list default="true" id="78911e42-e901-409b-9354-500c12b92a80" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -86,11 +22,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="609">
-              <caret line="87" selection-start-line="87" selection-end-line="87" />
+            <state relative-caret-position="150">
+              <caret line="69" column="2" selection-start-line="69" selection-start-column="2" selection-end-line="69" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="219">
+              <caret line="15" column="23" lean-forward="true" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -109,15 +54,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="320">
               <caret line="41" column="10" lean-forward="true" selection-start-line="41" selection-start-column="10" selection-end-line="41" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app_client/reviewModal/reviewModal.view.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="36" lean-forward="true" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -225,7 +161,6 @@
         <option value="$PROJECT_DIR$/app_client/home/common/directive/pageHeader/pageHeader.template.html" />
         <option value="$PROJECT_DIR$/app_client/home/common/directive/pageHeader/pageHeader.directive.js" />
         <option value="$PROJECT_DIR$/app_client/home/common/directive/navigation/navigation.template.html" />
-        <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/app_client/about/about.controller.js" />
         <option value="$PROJECT_DIR$/app_client/home/common/filters/addHtmlLineBreaks.filter.js" />
         <option value="$PROJECT_DIR$/app_client/home/common/views/genericText.view.html" />
@@ -237,6 +172,7 @@
         <option value="$PROJECT_DIR$/app_client/home/common/services/loc8rData.service.js" />
         <option value="$PROJECT_DIR$/app_client/reviewModal/reviewModal.controller.js" />
         <option value="$PROJECT_DIR$/app_client/locationDetail/locationDetail.controller.js" />
+        <option value="$PROJECT_DIR$/app.js" />
       </list>
     </option>
   </component>
@@ -374,12 +310,12 @@
       <workItem from="1561806269357" duration="27046000" />
       <workItem from="1561841536747" duration="18965000" />
       <workItem from="1561906993508" duration="27633000" />
-      <workItem from="1562415710409" duration="954000" />
+      <workItem from="1562415710409" duration="1285000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="205889000" />
+    <option name="totallyTimeSpent" value="206220000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="14" y="6" width="1230" height="640" extended-state="0" />
@@ -532,13 +468,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="20" column="9" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -730,8 +659,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="609">
-          <caret line="87" selection-start-line="87" selection-end-line="87" />
+        <state relative-caret-position="150">
+          <caret line="69" column="2" selection-start-line="69" selection-start-column="2" selection-end-line="69" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="15" column="23" lean-forward="true" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
         </state>
       </provider>
     </entry>
